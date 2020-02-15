@@ -3,23 +3,53 @@
     padding: 0
 }
 
+html,body {
+    height:100%;
+    padding:0;
+}
+
 body {
     background: #000;
 }
 
 canvas {
     display: block;
-    z-index:1;
-}
-
-top{
-    z-index:10;
+    z-index: 1;
 }
 
 #container {
     position: relative;
+    min-height:100%;
+    min-width:100%;
 }
 
-#container canvas, #overlay {
+#container canvas, #overlay, .absolute {
     position: absolute;
+}
+
+.top{
+    z-index: 9;
+    min-height:100%;
+    min-width:100%;
+
+}
+
+.text-wrap{
+    z-index: 8;
+    position: absolute;
+    top: 20%;
+    min-width:100%;
+}
+
+.small{
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    margin: 10px;
+}
+
+.big{
+    color: white;
+    font-size: 700%;
+    text-align: center;
 }
