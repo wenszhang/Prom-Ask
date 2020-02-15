@@ -55,9 +55,8 @@ canvas {
 }
 
 .sub{
-    color: #13280a;
+    color: #2e292b;
     font-size: 100%;
-    top: 300%;
-    min-width:100%;
+    padding-top: 7%;
     text-align: center;
 }
